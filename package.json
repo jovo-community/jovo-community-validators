@@ -23,7 +23,7 @@
     "validators"
   ],
   "author": "Jovo Community",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jovo-community/jovo-community-validators/issues"
   },
