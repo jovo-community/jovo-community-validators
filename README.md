@@ -1,10 +1,10 @@
-<!-- [![Build Status](https://travis-ci.org/jovo-community/jovo-community-validators.svg?branch=master)](https://travis-ci.org/jovo-community/jovo-community-validators)
-[![Coverage Status](https://img.shields.io/coveralls/github/jovo-community/jovo-community-validators.svg)](https://coveralls.io/github/jovo-community/jovo-community-validators?branch=master)
-
-[![NPM Version](https://img.shields.io/npm/v/jovo-community-validators.svg)](https://www.npmjs.com/package/jovo-community-validators)
-[![NPM Downloads](https://img.shields.io/npm/dt/jovo-community-validators.svg)](https://www.npmjs.com/package/jovo-community-validators) -->
-
 # Jovo Community Validators
+
+[![NPM](https://nodei.co/npm/jovo-community-validators.png)](https://nodei.co/npm/jovo-community-validators/)
+
+![Node CI](https://github.com/jovo-community/jovo-community-validators/workflows/Build/badge.svg)
+
+## Overview
 
 This library provides Validators to use in building Voice Apps with [Jovo](https://github.com/jovotech/jovo-framework).
 
