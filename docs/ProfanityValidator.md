@@ -20,9 +20,9 @@ async MyIntent() {
     // input: this.$inputs.query
 
     const schema = {
-    query: [
-        new ProfanityValidator(),
-    ],
+        query: [
+            new ProfanityValidator(),
+        ],
     };
 
     const validation = this.validate(schema);
@@ -44,9 +44,9 @@ async MyIntent() {
     // input: this.$inputs.query
 
     const schema = {
-    query: [
-        new ProfanityValidator(),
-    ],
+        query: [
+            new ProfanityValidator(),
+        ],
     };
 
     const validation = this.validate(schema);

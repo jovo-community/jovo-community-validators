@@ -23,16 +23,16 @@ async MyIntent() {
     // input: this.$inputs.duration
 
     const schema = {
-    query: [
-        new DurationInRangeValidator(), // default values
-        // new DurationInRangeValidator('PT1H', 'PT8H'), // 1 to 8 hours
-    ],
+        duration: [
+            new DurationInRangeValidator(), // default values
+            // new DurationInRangeValidator('PT1H', 'PT8H'), // 1 to 8 hours
+        ],
     };
 
     const validation = this.validate(schema);
 
     // validation fail
-    if (validation.failed('query', 'DurationInRangeValidator')) {
+    if (validation.failed('duration', 'DurationInRangeValidator')) {
         //return this.ask...
     }
 
@@ -45,19 +45,19 @@ async MyIntent() {
 const { DurationInRangeValidator } = require('jovo-community-validators');
 
 async MyIntent() {
-    // input: this.$inputs.query
+    // input: this.$inputs.duration
 
     const schema = {
-    query: [
-        new DurationInRangeValidator(), // default values
-        // new DurationInRangeValidator('PT1H', 'PT8H'), // 1 to 8 hours
-    ],
+        duration: [
+            new DurationInRangeValidator(), // default values
+            // new DurationInRangeValidator('PT1H', 'PT8H'), // 1 to 8 hours
+        ],
     };
 
     const validation = this.validate(schema);
 
     // validation fail
-    if (validation.failed('query', 'DurationInRangeValidator')) {
+    if (validation.failed('duration', 'DurationInRangeValidator')) {
         //return this.ask...
     }
 

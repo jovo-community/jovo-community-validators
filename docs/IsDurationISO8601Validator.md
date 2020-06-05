@@ -19,15 +19,15 @@ async MyIntent() {
     // input: this.$inputs.duration
 
     const schema = {
-    query: [
-        new IsDurationISO8601Validator()
-    ],
+        duration: [
+            new IsDurationISO8601Validator()
+        ],
     };
 
     const validation = this.validate(schema);
 
     // validation fail
-    if (validation.failed('query', 'IsDurationISO8601Validator')) {
+    if (validation.failed('duration', 'IsDurationISO8601Validator')) {
         //return this.ask...
     }
 
@@ -40,18 +40,18 @@ async MyIntent() {
 const { IsDurationISO8601Validator } = require('jovo-community-validators');
 
 async MyIntent() {
-    // input: this.$inputs.query
+    // input: this.$inputs.duration
 
     const schema = {
-    query: [
-        new IsDurationISO8601Validator(),
-    ],
+        duration: [
+            new IsDurationISO8601Validator(),
+        ],
     };
 
     const validation = this.validate(schema);
 
     // validation fail
-    if (validation.failed('query', 'IsDurationISO8601Validator')) {
+    if (validation.failed('duration', 'IsDurationISO8601Validator')) {
         //return this.ask...
     }
 
