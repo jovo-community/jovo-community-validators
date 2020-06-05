@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-// import { verify, anything, spy, capture } from 'ts-mockito';
+const chai_1 = require("chai");
 const index_1 = require("./../../index");
 describe('ProfanityValidator', () => {
     it('should pass on clean word', () => {
@@ -11,6 +11,14 @@ describe('ProfanityValidator', () => {
         };
         v.setInputToValidate(input);
         v.validate();
-        // expect(() => v.validate()).toThrow('IsRequiredValidator failed.');
+    });
+    it('should fail on bad word', () => {
+        const v = new index_1.ProfanityValidator();
+        const input = {
+            name: 'name',
+            value: 'damn'
+        };
+        v.setInputToValidate(input);
+        chai_1.expect(() => v.validate()).to.throw('ProfanityValidator failed - damn contains profanity.');
     });
 });
