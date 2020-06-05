@@ -12,13 +12,11 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.IsDurationISO8601Validator = void 0;
 var jovo_core_1 = require("jovo-core");
-var duration_iso_8601_1 = __importDefault(require("duration-iso-8601"));
+// @ts-ignore
+var duration_iso_8601_1 = require("duration-iso-8601");
 var IsDurationISO8601Validator = /** @class */ (function (_super) {
     __extends(IsDurationISO8601Validator, _super);
     function IsDurationISO8601Validator() {
@@ -26,7 +24,7 @@ var IsDurationISO8601Validator = /** @class */ (function (_super) {
     }
     IsDurationISO8601Validator.prototype.validate = function () {
         var input = this.inputToValidate;
-        if (input && input.value && !duration_iso_8601_1.default(input.value)) {
+        if (input && input.value && !duration_iso_8601_1.convertDuration(input.value)) {
             throw new jovo_core_1.ValidationError(this.constructor.name, this.constructor.name + " failed - " + input.value + " is not a valid ISO-8601 format.");
         }
     };

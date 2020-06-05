@@ -18,6 +18,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DurationInRangeValidator = void 0;
 var jovo_core_1 = require("jovo-core");
+// @ts-ignore
 var duration_iso_8601_1 = __importDefault(require("duration-iso-8601"));
 var DurationInRangeValidator = /** @class */ (function (_super) {
     __extends(DurationInRangeValidator, _super);

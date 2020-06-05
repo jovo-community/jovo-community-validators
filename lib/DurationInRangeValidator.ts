@@ -1,5 +1,7 @@
 
 import { Validator, ValidationError } from 'jovo-core';
+
+// @ts-ignore
 import convertToSecond from 'duration-iso-8601';
 
 export class DurationInRangeValidator extends Validator {

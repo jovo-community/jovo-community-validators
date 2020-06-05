@@ -1,6 +1,7 @@
 
 import { Validator, ValidationError } from 'jovo-core';
-import convertDuration from 'duration-iso-8601';
+// @ts-ignore
+import { convertDuration } from 'duration-iso-8601';
 
 export class IsDurationISO8601Validator extends Validator {
   public validate() {
