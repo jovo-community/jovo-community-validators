@@ -1,7 +1,7 @@
 import { Validator } from 'jovo-core';
 export interface ProfanityValidatorConfig {
-    blocklist?: string[];
     allowlist?: string[];
+    blocklist?: string[];
     includePermutations?: boolean;
 }
 export declare class ProfanityValidator extends Validator {

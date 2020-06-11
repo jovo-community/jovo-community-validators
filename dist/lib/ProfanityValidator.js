@@ -11,8 +11,8 @@ class ProfanityValidator extends jovo_core_1.Validator {
     constructor(config) {
         super();
         this.config = {
-            blocklist: [],
             allowlist: [],
+            blocklist: [],
             includePermutations: true,
         };
         if (config) {
