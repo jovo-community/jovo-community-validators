@@ -1,6 +1,6 @@
 {
   "name": "jovo-community-validators",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Validators for Jovo",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
