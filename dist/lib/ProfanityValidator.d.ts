@@ -8,5 +8,5 @@ export declare class ProfanityValidator extends Validator {
     private config?;
     constructor(config?: ProfanityValidatorConfig);
     validate(): void;
-    private isProfanity;
+    isProfanity(text: string): boolean;
 }

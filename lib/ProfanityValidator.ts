@@ -39,7 +39,7 @@ export class ProfanityValidator extends Validator {
     }
   }
 
-  private isProfanity(text: string) {
+  public isProfanity(text: string) {
     const words = text.toLowerCase().split(' ');
 
     const combinations: string[] = [];
